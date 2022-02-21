@@ -1,0 +1,225 @@
+.home {
+    background: #FAFAFA;
+    min-height: 100vh;
+    padding: 0 0 20px;
+}
+
+.home .home-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../../assets/images/home-background.svg');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    padding: 0 9%;
+}
+
+.home a {
+    text-decoration: none;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+}
+
+.home a::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    z-index: -1;
+    background-color: #23A6F0;
+    transition: transform 400ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.home a:hover::before,
+.home a:focus::before {
+    transform: scaleX(1);
+}
+
+.home .home-background header {
+    height: 69.82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .home-background header .nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    color: white;
+}
+
+.home .home-background header .nav-logo nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.home .home-background header .div-login {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.home .home-background header .div-login {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.home .home-background header .div-login button {
+    border: none;
+    width: 164.2px;
+    height: 39.9px;
+    color: #fff;
+    background-color: #23A6F0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.home .home-infos {
+    height: inherit;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #fff;
+}
+
+.home .home-infos h2 {
+    font-size: 44.5038px;
+    line-height: 30px;
+}
+
+.home .home-infos p {
+    margin-top: 5px;
+    max-width: 450px;
+    text-align: center;
+    line-height: 23px;
+}
+
+.home .home-infos .div-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home .home-infos .div-buttons button:last-child {
+    border: 1px solid white;
+    width: 144.2px;
+    height: 42.9px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.home .home-infos .div-buttons button {
+    border: none;
+    width: 164.2px;
+    height: 42.9px;
+    color: #fff;
+    background-color: #23A6F0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.home .home-collapses {
+    padding: 0 9%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: -90px;
+    flex-wrap: wrap;
+    animation: collapses-animation 1s linear alternate infinite;
+}
+
+@keyframes collapses-animation {
+    from {
+        transform:  translateY(-10px);
+    }
+
+    to {
+        transform:  translateY(10px);
+    }
+}
+
+.home .home-collapses div {
+    min-width: 300px;
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: white;
+    padding: 0 40px;
+    height: 180px;
+    box-shadow: 0px 5px 10px lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home .home-collapses .collapse-blue {
+    background-color: #23A6F0;
+    color: #fff;
+}
+
+.home .home-collapses div img {
+    width: 38px;
+    height: 29px;
+}
+
+@media (max-width: 940px) {
+    .home .home-background header .nav-logo {
+        gap: 40px;
+    }
+
+    .home .home-background header .nav-logo nav {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+    }
+
+    .home .home-background header .div-login {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 840px) {
+    .home .home-background header .nav-logo nav, .home .home-background header .div-login {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-background {
+        padding: 0 5%;
+    }
+    
+    .home .home-infos h2 {
+        font-size: 30.6923px;
+        line-height: 15px;
+    }
+
+    .home .home-infos .div-buttons {
+        flex-direction: column;
+    }
+
+    .home .home-collapses {
+        padding: 0 5%;
+        margin-top: 20px;
+    }
+}

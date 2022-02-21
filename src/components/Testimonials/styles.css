@@ -1,0 +1,68 @@
+.container-testimonials {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 9%;
+    background: #FAFAFA;
+}
+
+.container-testimonials > div {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.container-testimonials > div h1 {
+    margin-bottom: 20px;
+    color: #252B42;
+}
+
+.container-testimonials > div > p {
+    color: #737373;
+    line-height: 25px;
+}
+
+.container-testimonials > div > p + p {
+    margin-bottom: 60px;
+}
+
+.container-testimonials .testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.container-testimonials .testimonials > div {
+    min-width: 300px;
+    max-width: 450px;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    border: 0.767308px solid #DEDEDE;
+    border-radius: 3.83654px;
+    transition: transform 0.5s;
+}
+
+.container-testimonials .testimonials > div:hover {
+    transform: scale(1.05);
+}
+
+.container-testimonials .testimonials > div .testimonials-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.container-testimonials .testimonials > div .testimonials-info span {
+    font-weight: 500;
+    color: #737373;
+}

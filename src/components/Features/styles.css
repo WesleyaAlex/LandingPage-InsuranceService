@@ -1,0 +1,51 @@
+.container-features {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 9%;
+    transition: transform ease 1s;
+}
+
+.container-features .features {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.container-features .features div {
+    padding: 0 15px;
+    height: 250px;
+    min-width: 300px;
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: all ease 0.5s;
+}
+
+.container-features .features div:hover {
+    background: lightgray;
+}
+
+.container-features .features div img {
+    width: 55.25px;
+    height: 45.5px;
+}
+
+.container-features .features div p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.container-features .features div span {
+    font-weight: 500;
+    color: #737373;
+}
