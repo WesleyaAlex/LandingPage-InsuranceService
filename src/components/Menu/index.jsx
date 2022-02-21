@@ -12,10 +12,10 @@ function Menu() {
                 <div className='div3'></div>
             </div>
             <aside className={`aside ${openMenu && 'active'}`}>
-                <a href="#home" onClick={() => setOpenMenu(!openMenu)}>Home</a>
-                <a href="#features" onClick={() => setOpenMenu(!openMenu)}>Features</a>
-                <a href="#testimonials" onClick={() => setOpenMenu(!openMenu)}>Testimonials</a>
-                <a href="#connect" onClick={() => setOpenMenu(!openMenu)}>Connect</a>
+                <a href="/#home" onClick={() => setOpenMenu(!openMenu)}>Home</a>
+                <a href="/#features" onClick={() => setOpenMenu(!openMenu)}>Features</a>
+                <a href="/#testimonials" onClick={() => setOpenMenu(!openMenu)}>Testimonials</a>
+                <a href="/#connect" onClick={() => setOpenMenu(!openMenu)}>Connect</a>
             </aside>
         </>
     )

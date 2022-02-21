@@ -12,14 +12,14 @@ function Hero() {
                     <div className="nav-logo">
                         <h3>BrandName</h3>
                         <nav>
-                            <a href="#home">Home</a>
-                            <a href="#features">Features</a>
-                            <a href="#testimonials">Testimonials</a>
-                            <a href="#connect">Connect</a>
+                            <a href="/#home">Home</a>
+                            <a href="/#features">Features</a>
+                            <a href="/#testimonials">Testimonials</a>
+                            <a href="/#connect">Connect</a>
                         </nav>
                     </div>
                     <div className="div-login">
-                        <a href="#">Login</a>
+                        <a href="/#">Login</a>
                         <button type='button'>Become a member <img src={Arrow} alt="arrow" /></button>
                     </div>
                     <Menu />
